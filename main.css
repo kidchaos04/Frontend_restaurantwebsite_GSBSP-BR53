@@ -11,6 +11,70 @@ body{
 	font-size: 40px;
 	text-align: center;
 }
+#menu-bar{
+	width: 50px;
+	height: 10px;
+	margin: 50px 10px 10px 20px;
+	position: fixed;
+	z-index: 1;
+	cursor: pointer;
+}
+.bar{
+	background: orange;
+	border-radius: 10%;
+	transition: 4s;
+}
+#bar1{
+	width: 40px;
+	height: 10px;
+	transform: translateY(-4px);
+}
+#bar2{
+	width: 40px;
+	height: 10px;
+}
+#bar3{
+	width: 40px;
+	height: 10px;
+	transform: translateY(4px);
+}
+.change .bar{
+	background-color: #fff;
+}
+.change#bar1{
+	transform: translateY(6px);
+	rotate: z(45deg);
+}
+.change#bar3{
+	transform: translateY(-15px);
+	rotate: z(-45deg);
+}
+.change#bar2{
+	opacity: 0;
+}
+.nav li a{
+	text-decoration: none;
+	color: orange;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.nav li:hover{
+	color: #fff;
+	
+	padding-left: 10px; 
+}
+.nav li{
+	margin: 20px 10px 10px 20px;
+	padding-top: 10px;
+	list-style-type: none; 
+}
+.nav{
+	display: none;
+}
+.change-btn{
+	display: block;
+}
 .header{
 	min-height: 100vh;
 	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),
@@ -209,7 +273,7 @@ body{
  }
  .number{
  	text-align: center;
- 	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('https://images.pexels.com/photos/858508/pexels-photo-858508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') center/cover fixed no-repeat;
+ 	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url('https://images.pexels.com/photos/858508/pexels-photo-858508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') center/cover no-repeat fixed;
  	padding: 60px 0;
  	color: #fff;
  }
@@ -228,7 +292,7 @@ body{
  	text-transform: uppercase;
  }
   @media screen and (min-width: 576px){
-  	#number{
+  	#numbers{
   		display: grid;
   		grid-template-columns: 1fr 1fr; 
   	}
@@ -238,3 +302,135 @@ body{
   		grid-template-columns: repeat(4,1fr); 
   	}
   }
+
+  #food{
+  	padding: 20px;
+  }
+  .food-container{
+  	max-width: 90vw;
+  	margin: 0 auto;
+  }
+  .food-card{
+  	position: relative;
+  	background: linear-gradient(rgba(205,96,0,0.7),rgba(205,96,0,0.4));
+  	margin: 20px 0;
+  	color: #000;
+  	overflow: hidden;
+  	padding: 3px;
+  	border-radius: 16px;
+  	border: 1px solid orange;
+  	box-shadow: 2px 3px 1px 1px #cd6100;}
+  	#food img{
+  		width: 100%;
+  		min-height: 100%;
+  		display: block;
+  		transition: transform 4s;
+  	}
+  	.img-text{
+  		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%,-50%);
+  		text-align: center;
+  		opacity: 0;
+  		transition: opacity 4s;
+  	}
+  	.img-footer{
+  		display: flex;
+  		justify-content: space-between;
+  		width: 100%;
+  		position: absolute;
+  		left: 0;bottom: 0;
+  		padding: 10px;
+  		font-size: 20px;
+  		opacity: 0;
+  		color: #000;
+  		transition: opacity 4s;
+  	}
+  	.img-text h1{
+  		font-size: 30px;
+  		margin-bottom: 10px;
+  	}
+  	.food-card:hover img{
+  		opacity: 0.4;transform: scale(1.3);
+
+  	}
+  	.food-card:hover .img-text,.food-card:hover .img-footer{
+  		opacity: 1;
+
+  	}
+  	.food-btn{
+  		display: inline-block;
+  		background-color: #000;
+  		text-decoration: none;
+  		text-transform: capitalize;
+  		padding: 12px 32px;
+  		color: #fff;
+  		font-weight: bold;
+  		border-radius: 18px;
+  		cursor: pointer;
+  		margin-top: 16px;
+  		transition: all 0.3s ease-in-out;
+  		font-size: 18px;
+  		outline: none; 
+  	}
+  	.food-btn:hover{
+  		color: orange;
+  		background-color: #00;
+  		border: #000;
+  		outline: none;
+  	}
+  	.fas{
+  		font-size: 30px;
+  	}
+  	@media screen and (min-width: 576px){
+  		.food-container{
+  			display: grid;
+  			grid-template-columns: repeat(2,1fr);
+  			grid-row-gap: 16px;
+  		}
+  	}
+  	@media screen and (min-width: 992px){
+  		.food-container{
+  			display: grid;
+  			grid-template-columns: repeat(4 ,1fr);
+  			grid-row-gap: 16px;
+  		}
+  	}
+  	#gallery{
+  		padding: 40px;
+  		background-color: #fff;
+  	}
+  	.gallery-item{
+  		background: linear-gradient(rgba(241,161,13), rgb(255,165,0));
+  	}
+  	.gallery-item img{
+  		display: block;
+  		width: 100%;
+  		opacity: 1;
+  		transition: opacity 2s ease;
+  	}
+  	.gallery-item img:hover{
+  		opacity: 0.5;
+  	}
+  	@media screen and (min-width: 576px){
+  		#gallery-center{
+  			display: grid;
+  			grid-template-columns: 1fr 1fr;
+  		}
+  	}
+  	@media screen and (min-width: 992px){
+  		#gallery-center{
+  			grid-template-columns: repeat(4,1fr);
+  		}
+  	}
+  	.footer{
+  		background-color: #000;
+  		text-align: center;
+  	}
+  	.footer .text{
+  		text-transform: uppercase;
+  		color: #fff;
+  		font-size: 24px;
+  		margin-top: 20px;
+  	}
