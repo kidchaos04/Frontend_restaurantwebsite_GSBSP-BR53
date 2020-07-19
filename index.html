@@ -9,6 +9,19 @@
 	<script src="https://kit.fontawesome.com/332a215f17.js"></script>
 </head>
 <body>
+	<div id="menu" class="menu">
+		<div id="menu-bar" onclick="onClickMenu()">
+			<div id="bar1" class="bar"></div>
+			<div id="bar2" class="bar"></div>
+			<div id="bar3" class="bar"></div>
+			<ul id="nav" class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
 	<header class="header">
 		<div class="hero">
 			<h1 class="title">Chef Corner</h1>
@@ -27,8 +40,8 @@
 					<i class="fas fa-mug-hot"></i></div>
 					<div class="about-text">
 						<h2 class="about-subtitle">Drinks</h2>
-						<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p class="about-info">Chef Corner brings you most refreshing drinks with some interesting twists.
+						We have variety ranging from refreshing lemonades to creamy milkshakes.</p>
 					</div>
 			</article>
 			<article class="about">
@@ -36,8 +49,7 @@
 					<i class="fas fa-utensils"></i></div>
 					<div class="about-text">
 						<h2 class="about-subtitle">Healthy food</h2>
-						<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p class="about-info">We focus on providing heathy and nutritious meals along with tasty prepared by some of the finest cooks available in our hometown.</p>
 					</div>
 			</article>
 			<article class="about">
@@ -45,35 +57,32 @@
 					<i class="fas fa-mortar-pestle"></i></div>
 					<div class="about-text">
 						<h2 class="about-subtitle">Organic food</h2>
-						<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<p class="about-info">Our suppliers provide us best fresh farm products and not the canned products which helps us to keep your meal in controlled in terms of calories.</p>
 					</div>
 			</article>
 			<article class="about">
 				<div class="about-icon">
 					<i class="fas fa-drumstick-bite"></i></div>
 					<div class="about-text">
-						<h2 class="about-subtitle">White Meat</h2>
-						<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<h2 class="about-subtitle">Meat</h2>
+						<p class="about-info">Even in these tough times we provide our customers long variety of meat based delicacies which are finger licking good. </p>
 					</div>
 			</article>
 			<article class="about">
 				<div class="about-icon">
-					<i class="fas fa-fish"></i></div>
+					<i class="far fa-images"></i></div>
 					<div class="about-text">
-						<h2 class="about-subtitle">Sea Food</h2>
-						<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<h2 class="about-subtitle">Interior</h2>
+						<p class="about-info">Chef Corner has spacious interiors for our customers abiding social distancing .Masks and face shields are must.</p>
 					</div>
 			</article>
 			<article class="about">
 				<div class="about-icon">
-					<i class="fas fa-pepper-hot"></i></div>
+					<i class="fas fa-door-open"></i></div>
 					<div class="about-text">
-						<h2 class="about-subtitle">Hot and Spicy</h2>
-						<p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. </p>
+						<h2 class="about-subtitle">Good Neighbourhood</h2>
+						<p class="about-info">Our restaurant is situated just opposite to police station which makes our customers feel safe.
+						We have some of the nicest and friendly people in this neighbourhood. </p>
 					</div>
 			</article>
 		</div>
@@ -83,11 +92,16 @@
 		<article class="menu-text">
 			<div class="menu-text-center">
 				<h1>Our Menu</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-				<a href="#">Explore</a>
+				<p>Chef Corner has provided some of the best meals within common man's budget from the start.Here are the cuisine-</p>
+				<h3>Continental Cuisine</h3>
+				<h3>Chinese Cuisine</h3>
+				<h3>Mughlai Cuisine</h3>
+				<h3>Italian Specials</h3>
+				<h3>South Indian meals</h3>
+				<h3>Punjabi Curries</h3>
+				<h3>Flavoured Kulfi's and Ice Creams</h3>
+			    <h3>Famous Indian Deserts</h3>
+				<a href="menu.html">Explore Menu</a>
 			</div>
 		</article>
 	</section>
@@ -120,8 +134,110 @@
 			<p>50</p>
 			<h3>Desserts</h3>
 		</article>
-		
-		
 	</section>
+	<section id="food">
+		<div>
+			<h2 class="title-text">Four Meals Of The Day</h2>
+		</div>
+		<div class="food-container">
+			<article class="food-card">
+				<img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/72_Indian_Breakfast_Recipes_In_20_Minutes_For_Busy_Mornings.jpg">
+				<div class="img-text">
+					<h2>BreakFast</h2>
+				</div>
+				<div class="img-footer">
+					<div class="footer-icon">
+						<i class="fas fa-dollar-sign">10</i>
+					</div>
+					<div class="footer-btn">
+						<button type="button" class="footer-btn">Order Now</button>
+					</div>
+				</div>
+			</article>
+			<article class="food-card">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQoZM1b-NtAiCxtZV67du_3tqT0RQaHIVy0_Q&usqp=CAU">
+				<div class="img-text">
+					<h2>Lunch</h2>
+				</div>
+				<div class="img-footer">
+					<div class="footer-icon">
+						<i class="fas fa-dollar-sign">25</i>
+					</div>
+					<div class="footer-btn">
+						<button type="button" class="footer-btn">Order Now</button>
+					</div>
+				</div>
+			</article>
+			<article class="food-card">
+				<img src="https://static.toiimg.com/thumb/59217136.cms?width=1200&height=900">
+				<div class="img-text">
+					<h2>Evening Snacks</h2>
+				</div>
+				<div class="img-footer">
+					<div class="footer-icon">
+						<i class="fas fa-dollar-sign">20</i>
+					</div>
+					<div class="footer-btn">
+						<button type="button" class="footer-btn">Order Now</button>
+					</div>
+				</div>
+			</article>
+			<article class="food-card">
+				<img src="https://loveincorporated.blob.core.windows.net/contentimages/main/currydishes.jpg">
+				<div class="img-text">
+					<h2>Dinner</h2>
+				</div>
+				<div class="img-footer">
+					<div class="footer-icon">
+						<i class="fas fa-dollar-sign">35</i>
+					</div>
+					<div class="footer-btn">
+						<button type="button" class="footer-btn">Order Now</button>
+					</div>
+				</div>
+			</article>
+			
+		</div>
+	</section>
+	<section id="gallery">
+		<div>
+			<h2 class="title-text">Main Cuisines</h2>
+		</div>
+		<div id="gallery-center">
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><img src="https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/2087748/pexels-photo-2087748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><img src="https://images.pexels.com/photos/2087748/pexels-photo-2087748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><img src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"><img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/3926124/pexels-photo-3926124.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"><img src="https://images.pexels.com/photos/3926124/pexels-photo-3926124.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></a>
+			</article>
+			<article class="gallery-item">
+				<a href="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"><img src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></a>
+			</article>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="section-center">
+			<p class="text">&copy; <span>FOOD IS LOVE</span></p>
+			<p class="text">Contact- 89735738**</p>
+			<p class="text">Address-Chowk Chauraha opposite koneshwar temple
+			Lucknow,Uttar Pradesh 226003.</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="onClickMenu.js"></script>
 </body>
 </html>
